@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="945.0" style="-fx-background-color: rgba(137, 176, 250, 0.8);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanage.AccountViewController">
+   <children>
+      <Text layoutX="340.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADMIN ACCOUNT ">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font></Text>
+      <Button fx:id="btnExit_Acc" layoutX="395.0" layoutY="555.0" mnemonicParsing="false" onAction="#Acc_Exit" prefHeight="31.0" prefWidth="155.0" text="Exit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <TableView fx:id="acc_table" layoutX="95.0" layoutY="146.0" prefHeight="359.0" prefWidth="755.0">
+        <columns>
+          <TableColumn fx:id="admin_id" prefWidth="185.0" text="Admin ID" />
+          <TableColumn fx:id="password" prefWidth="213.0" text="PassWord" />
+            <TableColumn fx:id="admin_name" prefWidth="169.0" text="Admin Name" />
+            <TableColumn fx:id="admin_phone_num" prefWidth="187.0" text="Phone Number" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

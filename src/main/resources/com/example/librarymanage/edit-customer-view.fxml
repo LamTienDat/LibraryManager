@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="945.0" style="-fx-background-color: rgba(137, 176, 250, 0.8);" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanage.EditCustomerViewController">
+   <children>
+      <TextField fx:id="txtCusNumber" layoutX="313.0" layoutY="167.0" prefHeight="31.0" prefWidth="320.0" />
+      <TextField fx:id="txtCusName" layoutX="313.0" layoutY="237.0" prefHeight="31.0" prefWidth="320.0" />
+      <TextField fx:id="txtCusAddress" layoutX="313.0" layoutY="311.0" prefHeight="31.0" prefWidth="320.0" />
+      <TextField fx:id="txtCusPhoneNum" layoutX="313.0" layoutY="390.0" prefHeight="31.0" prefWidth="320.0" />
+      <Text layoutX="240.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text layoutX="227.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="220.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <Text layoutX="199.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number" />
+      <Button fx:id="btnAddDesCus" layoutX="364.0" layoutY="491.0" mnemonicParsing="false" onAction="#GotoAddDesCus" text="Add">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="btnExitAddCus" layoutX="510.0" layoutY="491.0" mnemonicParsing="false" onAction="#GotoExitAddCus" text="Exit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

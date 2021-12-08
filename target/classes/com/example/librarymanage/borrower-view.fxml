@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="945.0" style="-fx-background-color: rgba(137, 176, 250, 0.8);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanage.BorrowerViewController">
+   <children>
+      <Text layoutX="338.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BORROWER MANAGER">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Text>
+      <Text layoutX="137.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrower Name :" />
+      <Label fx:id="labelBorrowerName" layoutX="334.0" layoutY="153.0" text="Label" />
+      <Text layoutX="258.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrow ID" />
+      <TextField fx:id="textSearchBorrowID" layoutX="379.0" layoutY="101.0" onKeyTyped="#SearchIDkeytype" />
+      <Button fx:id="btnSearchBorrower" layoutX="605.0" layoutY="101.0" mnemonicParsing="false" onAction="#GotoSearchBorrower" text="Search">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Text layoutX="596.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number :" />
+      <Label fx:id="labelPhoneNumber" layoutX="732.0" layoutY="153.0" text="Label" />
+      <Button fx:id="btnEditBorrower" layoutX="686.0" layoutY="101.0" mnemonicParsing="false" onAction="#GotoEditBorrower" text="Edit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="btnDeleteBorrower" layoutX="750.0" layoutY="101.0" mnemonicParsing="false" onAction="#GotoDeleteBorrower" text="Delete">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Text layoutX="325.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address :" />
+      <Label fx:id="labelAddress" layoutX="437.0" layoutY="194.0" text="Label" />
+      <TableView fx:id="table" layoutX="63.0" layoutY="245.0" prefHeight="376.0" prefWidth="825.0">
+        <columns>
+          <TableColumn fx:id="customerID" prefWidth="148.0" text="borrower_ID" />
+            <TableColumn fx:id="bookID" prefWidth="223.0" text="book_ID" />
+            <TableColumn fx:id="borrowDate" prefWidth="198.0" text="borrowDate" />
+            <TableColumn fx:id="returnDate" prefWidth="255.0" text="returnDate" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBorrowerExit" layoutX="827.0" layoutY="101.0" mnemonicParsing="false" onAction="#ExitBorrower" text="Exit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

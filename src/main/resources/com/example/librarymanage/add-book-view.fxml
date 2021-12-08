@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="945.0" style="-fx-background-color: rgba(137, 176, 250, 0.8);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanage.AddBookViewController">
+   <children>
+      <TextField fx:id="txtAddBookID" layoutX="184.0" layoutY="121.0" />
+      <TextField fx:id="txtAddBookName" layoutX="579.0" layoutY="121.0" />
+      <TextField fx:id="txtAddAuthor" layoutX="184.0" layoutY="219.0" />
+      <TextField fx:id="txtAddPublisher" layoutX="579.0" layoutY="219.0" />
+      <TextField fx:id="txtAddAmount" layoutX="184.0" layoutY="305.0" />
+      <Text layoutX="109.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID" />
+      <Text layoutX="479.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book Name" />
+      <Text layoutX="112.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author" />
+      <Text layoutX="487.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Publisher" />
+      <Text layoutX="104.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount" wrappingWidth="60.88623046875" />
+      <Button fx:id="btnAdd" layoutX="180.0" layoutY="502.0" mnemonicParsing="false" onAction="#AddNewBook" prefHeight="39.0" prefWidth="98.0" text="Add">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="btnAddBookExit" layoutX="458.0" layoutY="502.0" mnemonicParsing="false" onAction="#AddBookExit" prefHeight="39.0" prefWidth="98.0" text="Exit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Text layoutX="579.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="didacticism ID : 1 - 100" wrappingWidth="241.0693359375">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="579.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="reference books ID : 101 - 200">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="579.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="curriculum ID : 201 - 300">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text layoutX="407.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD BOOK">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnEditBookMng" layoutX="322.0" layoutY="502.0" mnemonicParsing="false" onAction="#GotoEditMng" prefHeight="39.0" prefWidth="98.0" text="Edit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

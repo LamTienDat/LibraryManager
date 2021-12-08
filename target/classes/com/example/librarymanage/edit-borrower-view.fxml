@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="945.0" style="-fx-background-color: rgba(137, 176, 250, 0.8);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanage.EditBorrowerViewController">
+   <children>
+      <Text layoutX="336.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BORROWER MANAGER">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Text>
+      <Text layoutX="162.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borrower ID" />
+      <TextField fx:id="txtEditBorrowerID" layoutX="273.0" layoutY="95.0" prefHeight="31.0" prefWidth="399.0" />
+      <Button fx:id="btnEditBorrower" layoutX="273.0" layoutY="465.0" mnemonicParsing="false" onAction="#EditBorrower" prefHeight="40.0" prefWidth="118.0" text="Add">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <TextField fx:id="txtEditBorrowerBookID" layoutX="273.0" layoutY="161.0" prefHeight="31.0" prefWidth="399.0" />
+      <Text layoutX="175.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID" />
+      <Button fx:id="btnExitBorrower" layoutX="538.0" layoutY="465.0" mnemonicParsing="false" onAction="#ExitEditBorrower" prefHeight="40.0" prefWidth="118.0" text="Exit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Text layoutX="162.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Return Date" />
+      <DatePicker fx:id="txtEditBorrowerBorrowDate" layoutX="274.0" layoutY="234.0" prefHeight="31.0" prefWidth="399.0" />
+      <Text layoutX="162.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BorrowDate" />
+      <DatePicker fx:id="txtEditBorrowerReturnDate" layoutX="273.0" layoutY="305.0" prefHeight="31.0" prefWidth="399.0" />
+   </children>
+</AnchorPane>

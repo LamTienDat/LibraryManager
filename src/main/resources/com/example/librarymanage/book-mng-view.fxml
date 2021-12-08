@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="945.0" style="-fx-background-color: rgba(137, 176, 250, 0.8);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanage.BookMngViewController">
+   <children>
+      <Text layoutX="167.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Book ID" />
+      <Text layoutX="365.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BOOK MANAGER" wrappingWidth="219.5615234375">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Text>
+      <TextField fx:id="txtBookSearch" layoutX="241.0" layoutY="124.0" prefHeight="31.0" prefWidth="384.0" />
+      <Button fx:id="btnBookGo" layoutX="658.0" layoutY="124.0" mnemonicParsing="false" onAction="#GotoSearch" prefHeight="31.0" prefWidth="52.0" text="Go">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="btnBookExit" layoutX="849.0" layoutY="124.0" mnemonicParsing="false" onAction="#BookExit" prefHeight="31.0" prefWidth="52.0" text="Exit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <TableView fx:id="table" layoutX="49.0" layoutY="242.0" prefHeight="366.0" prefWidth="852.0">
+        <columns>
+          <TableColumn fx:id="bookID" prefWidth="85.0" text="BOOK ID" />
+          <TableColumn fx:id="bookName" prefWidth="250.0" text="BOOK NAME" />
+            <TableColumn fx:id="author" prefWidth="167.0" text="AUTHOR" />
+            <TableColumn fx:id="publisher" prefWidth="258.0" text="PUBLISHER" />
+            <TableColumn fx:id="amount" prefWidth="91.0" text="AMOUNT" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnAddBook" layoutX="792.0" layoutY="124.0" mnemonicParsing="false" onAction="#AddBook" prefHeight="31.0" prefWidth="52.0" text="Edit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="btnDeleteBook" layoutX="717.0" layoutY="124.0" mnemonicParsing="false" onAction="#DeleteBook" prefHeight="31.0" prefWidth="67.0" text="Delete">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>

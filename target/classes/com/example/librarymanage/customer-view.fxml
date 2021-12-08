@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="945.0" style="-fx-background-color: rgba(137, 176, 250, 0.8);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanage.CustomerViewController">
+   <children>
+      <TableView fx:id="table" layoutX="51.0" layoutY="265.0" prefHeight="342.0" prefWidth="845.0">
+        <columns>
+          <TableColumn fx:id="customerID" prefWidth="114.0" text="ID" />
+          <TableColumn fx:id="Name" prefWidth="183.0" text="Name" />
+            <TableColumn fx:id="Address" prefWidth="262.0" text="Address" />
+            <TableColumn fx:id="PhoneNumber" prefWidth="184.0" text="PhoneNumber" />
+            <TableColumn fx:id="Amount" prefWidth="97.0" text="Amount" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnEditCustomer" layoutX="121.0" layoutY="136.0" mnemonicParsing="false" onAction="#GotoEditCus" text="Edit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="btnDeleteCustomer" layoutX="442.0" layoutY="136.0" mnemonicParsing="false" onAction="#GotoDeleteCus" text="Delete">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Button fx:id="btnExitCus" layoutX="789.0" layoutY="136.0" mnemonicParsing="false" onAction="#GotoExitCus" text="Exit">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+      <Text layoutX="406.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CUSTOMER">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

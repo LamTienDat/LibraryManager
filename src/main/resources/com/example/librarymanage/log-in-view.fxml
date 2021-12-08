@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="640.0" prefWidth="945.0" style="-fx-background-color: rgba(137, 176, 250, 0.8);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.librarymanage.LoginController">
+   <children>
+      <Text layoutX="416.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Text>
+      <Text layoutX="240.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID" />
+      <Text layoutX="216.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" />
+      <TextField fx:id="txtID" layoutX="360.0" layoutY="205.0" />
+      <TextField fx:id="txtPass" layoutX="361.0" layoutY="276.0" />
+      <Button fx:id="btnLog" layoutX="393.0" layoutY="394.0" mnemonicParsing="false" onAction="#Login" prefHeight="31.0" prefWidth="122.0" text="Log in">
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor></Button>
+   </children>
+</AnchorPane>
